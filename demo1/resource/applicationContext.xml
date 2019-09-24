@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--这里的id也可以改成name，id用的多，也可以什么都不写，不写的话默认是类的全限定名-->
+    <bean id="dogs" class="com.gmr.pojo.Dogs">
+        <!--注入对象的属性-->
+        <property name="dogName" value="啸天"></property>
+        <property name="dogAge" value="10"></property>
+    </bean>
+
+</beans>
